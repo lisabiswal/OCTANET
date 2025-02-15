@@ -1,21 +1,23 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 body{
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgba(0, 0, 0, 0.09);
-  overflow: visible;
+  /* background-color: rgba(0, 0, 0, 0.09); */
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  
 }
 
 .bac-img {
-  background-image: url('beach.jpg'); 
+  background-image: url('beach.jpg'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   width: 100vw;
-  height: 60vh;
+  height: 70vh;
   position: relative;
 }
 
@@ -30,7 +32,7 @@ body{
 
 .black-cover {
   width: 100vw;
-  height: 60vh;
+  height: 70vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
   position: relative;
 }
@@ -88,7 +90,7 @@ body{
   align-items: center;
   color: white;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 
@@ -142,8 +144,9 @@ body{
 }
 
 .main-div{
-  margin-top: 10rem;
+  /* margin-top: 5rem; */
   display: flex;
+  padding: 5rem;
   justify-content: space-around;
 }
 .right-img img{
@@ -159,7 +162,7 @@ body{
   border: 6px solid rgb(29, 114, 128);
   position: relative;
   z-index: -1;
-  bottom: 142px; 
+  bottom: 155px; 
 }
 .info{
   margin-top: 20px;
@@ -182,13 +185,12 @@ body{
 }
 .main-div h1{
   font-weight: 500;
+  text-align: left;
+  margin-left: 10px;
+
 }
 
-footer{
-  width: 100vw;
-  height: 15px;
-  background-color: cadetblue;
-}
+
 .ser-one,
 .ser-two,
 .ser-three {
@@ -216,9 +218,10 @@ footer{
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
  
 }
+
 
 .ser-one p,.ser-two p,.ser-three p{
   line-height: 1.5;
@@ -228,7 +231,111 @@ footer{
   width: 100%;
 }
 .ser{
-  text-align: center;
-  margin-bottom: 3rem;
+  text-align: center; 
+  margin-bottom: 2rem;
   font-weight: 400;
+}
+.ser-sec{
+  position: relative;
+  bottom: 110px;
+}
+
+.guest{
+  width: 20rem;
+  height: 30rem;
+  border: 2px solid rgb(95, 160, 114);
+  /* margin-bottom: 5rem; */
+  border-radius: 0 10px;
+  overflow: hidden;
+
+
+  
+}
+.guest-love{
+  display: grid;
+  justify-content: center;
+
+  /* flex-wrap: wrap; */
+  margin-top: 2rem;
+  gap: 2rem;
+  grid-template-columns: repeat(4,20rem);
+}
+.guest img{
+  width: 100%;
+}
+.guest h3,p{
+  padding: 10px;
+}
+.guest span{
+  background-color: cadetblue;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+h1{
+  font-weight: 500;
+}
+.guest-sec{
+  /* margin-top: 7rem; */
+  padding: 20px;
+
+}
+.guest-sec h1{
+  margin-left: 1.5rem;
+}
+.guest .price{
+  text-align: right;
+}
+h1{
+  text-align: center;
+}
+
+
+footer{
+  width: 100vw;
+  height: 20rem;
+  background-color: rgba(39, 73, 74, 0.118);
+  margin-top: 5rem;
+}
+
+.footer-sec{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+.footer-sec p{
+  line-height: 1.5;
+}
+.footer-sec h3{
+  margin-left: 11px;
+  font-weight: 550;
+}
+
+.why-us{
+  margin-top: 5rem;
+}
+
+.all-reason{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  
+}
+.reason h2{
+  text-align: center;
+}
+.reason img{
+  margin-left: 25%;
+  margin-bottom: 2rem;
+  
+}
+.all-reason .reason{
+  width: 15rem;
+  margin: 10px;
+  /* border: 1px solid brown; */
+  border-bottom: 2px solid gray;
+
+}
+.reason p{
+  line-height: 1.4;
 }
